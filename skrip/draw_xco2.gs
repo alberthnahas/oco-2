@@ -21,7 +21,7 @@ reinit
 
 ****** open file
 *** preferred file is pre-processed file via CDO commands (https://code.mpimet.mpg.de/projects/cdo)
-'sdfopen CO2_mx_monthly_201709_202206.nc'
+'sdfopen CO2_mx_monthly_201410_202206.nc'
 ****** end opening file
 
 
@@ -73,7 +73,7 @@ while (t <= 58)
 'set strsiz 0.11'
 'set string 1 l 2 90'
 'draw string 10.6 1.53 NASA/OCO-2'
-** highlight regencies of interest
+** include area of Indonesia
 'set gxout shp'
 'set line 1 1 2'
 'set shpopts -1'
@@ -92,7 +92,7 @@ while (t <= 58)
 
 
 ****** produce figures
-'printim oco2_co2mx_idn_'t+34'.png'
+'printim oco2_co2mx_idn_'t'.png'
 ****** end producing figures
 
 
