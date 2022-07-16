@@ -19,6 +19,9 @@ Data satelit OCO-2 yang digunakan pada pengolahan ini bersumber dari data OCO-2 
 
 Pengunduhan data dilakukan dengan menggunakan fasilitas OPENDAP yang dapat mengumpulkan data berekstensi .h5 secara kolektif. Akses OPENDAP dari data ini dapat dilakukan melalui pranala berikut: https://oco2.gesdisc.eosdis.nasa.gov/opendap/OCO2_L2_Standard.11/contents.html. Untuk kemudahan, pengumpulan data diproses menggunakan wget. Cara penggunaan wget untuk pengunduhan data untuk sistem operasi Windows, MacOS, dan Linux dapat dilihat pada pranala berikut: https://disc.gsfc.nasa.gov/data-access. Pengunduhan data baru dapat diproses jika sudah memiliki akun Earthdata NASA (https://wiki.earthdata.nasa.gov/display/EL/How+To+Register+For+an+EarthData+Login+Profile).
 
+File .h5 yang diunduh menggunakan wget berupa pranala dengan format berikut:
+https://oco2.gesdisc.eosdis.nasa.gov/opendap/OCO2_L2_Standard.11/{yyyy}/{ddd}/{file.oco-2.h5}, dengan {yyyy} = tahun data, {ddd} = urutan hari sejak 1 Januari (001, 002, ..., dst), dan {file.oco-2.h5} = file dengan ekstensi .h5.
+
 <br></br>
 ## Pengolahan Data
 
