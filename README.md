@@ -7,8 +7,9 @@ Dalam kajian mengenai perubahan iklim, peningkatan konsentrasi CO<sub>2</sub> pe
 
 Salah satu sumber informasi mengenai konsentrasi CO<sub>2</sub> diperoleh dari Satelit Orbiting Carbon Observatory-2 atau OCO-2. Kegiatan pemantauan CO<sub>2</sub> menggunakan Satelit OCO-2 ini dilakukan oleh NASA sejak peluncuran satelit pada tanggal 2 Juli 2014. Satelit OCO-2 merupakan satelit milik NASA pertama yang didedikasikan untuk melakukan pemantauan CO<sub>2</sub> secara <i>remote sensing </i>. Oleh karena dipantau dari luar angkasa, nilai CO<sub>2</sub> yang diberikan merupakan total kolom konsentrasi CO<sub>2</sub>. Total kolom CO<sub>2</sub> adalah hasil pantauan konsentrasi CO<sub>2</sub> dari permukaan bumi sampai dengan puncak atmosfer yang tercakup dalam resolusi spasial satelit.
 
-Untuk mendapatkan nilai total kolom CO<sub>2</sub>, satelit ini menggabungkan tiga spektrometer dengan resolusi tinggi yang mengukur refleksi sinar matahari pada panjang gelombang 1,61 dan 2,06 micrometer atau pada daerah absorpsi <i>near-infrared</i> CO<sub>2</sub>. 
+Untuk mendapatkan nilai total kolom CO<sub>2</sub>, satelit ini menggabungkan tiga spektrometer dengan resolusi tinggi yang mengukur refleksi sinar matahari pada panjang gelombang 1,61 dan 2,06 micrometer atau pada daerah absorpsi <i>near-infrared</i> CO<sub>2</sub>. Resolusi spasial dari sapuan Satelit OCO-2 adalah 2,25 km x 1,29 km, dengan waktu perulangan setiap 16 hari.
 
+Informasi mengenai Satelit OCO-2 dapat dilihat dari video berikut.
 [![Watch the video](https://img.youtube.com/vi/-uP_fqEfYWg/maxresdefault.jpg)](https://youtu.be/-uP_fqEfYWg)
 
 <br></br>
