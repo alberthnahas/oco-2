@@ -24,3 +24,5 @@ Pengunduhan data dilakukan dengan menggunakan fasilitas OPENDAP yang dapat mengu
 Pengolahan data yang dilakukan terhadap data yang telah diunduh untuk periode bulanan. Pengolahan dilakukan dengan menggunakan skrip R. Dalam skrip ini, nilai total kolom CO<sub>2</sub> (xco2) beserta koordinat lintang dan bujur pada titik-titik dengan nilai xco2 diekstrak dari data satelit (format .h5). Titik-titik ini kemudian diinterpolasikan dengan menggunakan metode <i>Inverse Distance Weighting</i> (IDW) pada resolusi spasial 0,5 derajat. Luaran dari proses ini adalah file binary dengan format .nc.
 
 Visualisasi dari hasil pengolahan data dilakukan dengan skrip GrADS yang menampilkan total kolom CO<sub>2</sub> untuk wilayah Indonesia (90BT- 145BT, 10LU-15LS).
+
+![](https://github.com/alberthnahas/OCO-2/blob/main/oco2_co2mx_idn_201410-202206.gif)
