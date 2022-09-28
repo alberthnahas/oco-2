@@ -46,7 +46,7 @@ flist <- list.files(path = fpath,
                     full.names = TRUE, 
                     recursive = TRUE)
 fn <- do.call(c, list(flist, fn))
-print(paste("There are ",length(fn), " netcdf file(s) in this directory."))
+print(paste("There are ",length(fn), " h5 file(s) in this directory."))
 
 
 ### SOME NAMING ###
