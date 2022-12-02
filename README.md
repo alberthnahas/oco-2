@@ -25,6 +25,6 @@ Pengolahan data yang dilakukan terhadap data yang telah diunduh untuk periode bu
 
 Visualisasi dari hasil pengolahan data dilakukan dengan skrip GrADS yang menampilkan total kolom CO<sub>2</sub> untuk wilayah Indonesia (90BT- 145BT, 10LU-15LS).
 
-![](https://github.com/alberthnahas/OCO-2/blob/main/oco2_co2mx_idn_201410-202207.gif)
+![](https://github.com/alberthnahas/OCO-2/blob/main/oco2_co2mx_idn_201410-202211.gif)
 
 Skrip dibuat dengan Sistem Operasi Ubuntu 22.04 LTS.
