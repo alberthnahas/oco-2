@@ -27,4 +27,4 @@ Visualisasi dari hasil pengolahan data dilakukan dengan skrip GrADS yang menampi
 
 ![](https://github.com/alberthnahas/OCO-2/blob/main/ghg-indonesia.gif)
 
-Skrip dibuat dengan Sistem Operasi Ubuntu 22.04 LTS.
+Kode R dibuat dengan Sistem Operasi Ubuntu 24.04 LTS.
