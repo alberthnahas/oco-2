@@ -15,7 +15,7 @@ More information about the OCO-2 Satellite can be seen in the following video.
 <br></br>
 ## Data Download
 
-The OCO-2 satellite data used in this processing comes from the OCO-2 Level 2 geolocated XCO2 retrievals results, physical model V11.2 (https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11.2/summary). This version is the latest, implemented since the June 2024. This data is the output of the algorithm used to obtain the average total column CO<sub>2</sub> (XCO2).
+The OCO-2 satellite data used in this processing comes from the OCO-2 Level 2 geolocated XCO2 retrievals results, physical model V11.2 (https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11.2/summary). This version is the latest, implemented since June 2024. This data is the output of the algorithm used to obtain the average total column CO<sub>2</sub> (XCO2).
 
 Data download is carried out using a file clipping facility that can collectively gather .h5 files within the coordinate boundaries of Indonesia. This data can be accessed via the link above by selecting the Get Data menu. For convenience, data collection is processed using wget. Instructions on how to use wget for data download on Windows, MacOS, and Linux operating systems can be found at the following link: https://disc.gsfc.nasa.gov/data-access. Data download can only be processed if you have a NASA Earthdata account (https://wiki.earthdata.nasa.gov/display/EL/How+To+Register+For+an+EarthData+Login+Profile). 
 <br></br>
