@@ -11,7 +11,6 @@ To obtain the total column CO<sub>2</sub> values, this satellite combines three 
 
 More information about the OCO-2 Satellite can be seen in the following video.
 [![Watch the video](https://img.youtube.com/vi/-uP_fqEfYWg/maxresdefault.jpg)](https://youtu.be/-uP_fqEfYWg)
-
 <br></br>
 ## Data Download
 
