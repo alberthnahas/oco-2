@@ -27,3 +27,5 @@ Visualization of the processed data results is done using a GrADS script that di
 ![](https://github.com/alberthnahas/OCO-2/blob/main/ghg-indonesia.gif)
 
 The R codes were developed on Ubuntu 24.04 LTS operating system.
+
+<i>Note: Data for August 2017 is not available.</i>
