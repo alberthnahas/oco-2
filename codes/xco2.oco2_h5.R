@@ -7,6 +7,7 @@
 #     to a dataframe.                                                                #
 # The script interpolates points into raster by applying appropriate interpolation   #
 #     method for the Indonesian region.                                              #
+# Always change lines 148 and 159 to the last day of the previous month.             #
 # Refer to below comments for more detailed instructions/explanations.               #
 # Created by Alberth Nahas on 2022-07-15 08:00 pm WIB.                               #
 # Email: alberth.nahas@bmkg.go.id                                                    #
@@ -36,7 +37,7 @@ require(gdalUtilities)
 ### COLLECT .nc FILES ON A LIST ###
 setwd("~/Documents/Satellite/oco2/1-data/")  # adjust to the right directory
 year <- "24" # Use only two last digits of the year
-month <- "11"
+month <- "12"
 fpath <- getwd()
 pattern <- paste0(year,month) # adjust to "oco3_" for OCO-3
 fn <- NULL
@@ -144,7 +145,7 @@ writeRaster(co2rst,
             xname = "longitude",
             yname = "latitude", 
             zname = "time",
-            zunit = "days since 2024-10-31") # Timestep and time origin are not specified
+            zunit = "days since 2024-11-30") # Timestep and time origin are not specified
 writeRaster(aco2rst,
             file = transit2,
             overwrite = TRUE,
@@ -155,7 +156,7 @@ writeRaster(aco2rst,
             xname = "longitude",
             yname = "latitude",
             zname = "time",
-            zunit = "days since 2024-10-31") # Timestep and time origin are not specified
+            zunit = "days since 2024-11-30") # Timestep and time origin are not specified
 # Add Coordinate Reference System
 gdal_translate(transit, a_srs = "EPSG:4326", of = "netCDF", ncname)
 gdal_translate(transit2, a_srs = "EPSG:4326", of = "netCDF", ncname2)
