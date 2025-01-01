@@ -2,7 +2,7 @@
 # This is an R script to create a raster map from OCO-2          .                   #   
 # Input files are of a HDF (.h5) type taken from satellite observations.             #
 # Files are downloaded from                                                          #
-#     https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11/summary (OCO-2)        #
+#     https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11.2/summary (OCO-2)      #
 # This script transforms a mosaic consisting of a number of satellite observations   #
 #     to a dataframe.                                                                #
 # The script interpolates points into raster by applying appropriate interpolation   #
@@ -36,7 +36,7 @@ require(gdalUtilities)
 ### COLLECT .nc FILES ON A LIST ###
 setwd("~/Documents/Satellite/oco2/1-data/")  # adjust to the right directory
 year <- "24" # Use only two last digits of the year
-month <- "08"
+month <- "11"
 fpath <- getwd()
 pattern <- paste0(year,month) # adjust to "oco3_" for OCO-3
 fn <- NULL
@@ -144,7 +144,7 @@ writeRaster(co2rst,
             xname = "longitude",
             yname = "latitude", 
             zname = "time",
-            zunit = "days since 2024-07-31") # Timestep and time origin are not specified
+            zunit = "days since 2024-10-31") # Timestep and time origin are not specified
 writeRaster(aco2rst,
             file = transit2,
             overwrite = TRUE,
@@ -155,7 +155,7 @@ writeRaster(aco2rst,
             xname = "longitude",
             yname = "latitude",
             zname = "time",
-            zunit = "days since 2024-07-31") # Timestep and time origin are not specified
+            zunit = "days since 2024-10-31") # Timestep and time origin are not specified
 # Add Coordinate Reference System
 gdal_translate(transit, a_srs = "EPSG:4326", of = "netCDF", ncname)
 gdal_translate(transit2, a_srs = "EPSG:4326", of = "netCDF", ncname2)
