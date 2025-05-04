@@ -21,6 +21,7 @@ Data download is carried out using a file clipping facility that can collectivel
 ## Data Processing
 
 Data processing is conducted on the downloaded data for monthly periods. The processing is done using an R script. In this script, the total column CO<sub>2</sub> (xco2) values, along with the latitude and longitude coordinates at the points with xco2 values, are extracted from the satellite data (in .h5 format). These points are then interpolated using the Inverse Distance Weighting (IDW) method at a spatial resolution of 0.5 degrees. The output of this process is a binary file in .nc format.
+Another approach using Python is also available.
 
 Visualization of the processed data results is done using a GrADS script that displays the total column CO<sub>2</sub> for the Indonesian region (90°E - 145°E, 10°N - 15°S).
 
