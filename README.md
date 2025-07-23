@@ -14,19 +14,10 @@ More information about the OCO-2 Satellite can be seen in the following video.
 <br></br>
 ## Data Download
 
-The OCO-2 satellite data used in this processing comes from the OCO-2 Level 2 geolocated XCO2 retrievals results, physical model V11.2 (https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11.2/summary). This version is the latest, and it was implemented in June 2024. This data is the output of the algorithm used to obtain the average total column CO<sub>2</sub> (XCO2).
+The OCO-2 satellite data used in this processing comes from the [OCO-2 Level 2 geolocated XCO2 retrievals results, physical model V11.2](https://disc.gsfc.nasa.gov/datasets/OCO2_L2_Standard_11.2/summary). This version is the latest, and it was implemented in June 2024. This data is the output of the algorithm used to obtain the average total column CO<sub>2</sub> (XCO2).
 
-Data download is carried out using a file clipping facility that can collectively gather .h5 files within the coordinate boundaries of Indonesia. This data can be accessed via the link above by selecting the Get Data menu. For convenience, data collection is processed using wget. Instructions on how to use wget for data download on Windows, MacOS, and Linux operating systems can be found at the following link: https://disc.gsfc.nasa.gov/data-access. Data download can only be processed if you have a NASA Earthdata account (https://wiki.earthdata.nasa.gov/display/EL/How+To+Register+For+an+EarthData+Login+Profile). 
+Data download is carried out using a file clipping facility that can collectively gather .h5 files within the coordinate boundaries of Indonesia. This data can be accessed via the link above by selecting the Get Data menu. For convenience, data collection is processed using wget. Instructions on how to use wget for data download on Windows, MacOS, and Linux operating systems can be found at the following link: https://disc.gsfc.nasa.gov/data-access. Data download can only be processed if you have a [NASA Earthdata account](https://wiki.earthdata.nasa.gov/display/EL/How+To+Register+For+an+EarthData+Login+Profile). 
 <br></br>
 ## Data Processing
 
-Data processing is conducted on the downloaded data for monthly periods. The processing is done using an R script. In this script, the total column CO<sub>2</sub> (xco2) values, along with the latitude and longitude coordinates at the points with xco2 values, are extracted from the satellite data (in .h5 format). These points are then interpolated using the Inverse Distance Weighting (IDW) method at a spatial resolution of 0.5 degrees. The output of this process is a binary file in .nc format.
-Another approach using Python is also available.
-
-Visualization of the processed data results is done using a GrADS script that displays the total column CO<sub>2</sub> for the Indonesian region (90°E - 145°E, 10°N - 15°S).
-
-![](https://github.com/alberthnahas/OCO-2/blob/main/ghg-indonesia.gif)
-
-The R codes were developed on Ubuntu 24.04 LTS operating system.
-
-<i>Note: Data for August 2017 is not available.</i>
+Data processing is conducted on the downloaded data for monthly periods. The processing is done using Python. In this script, the total column CO<sub>2</sub> (xco2) values, along with the latitude and longitude coordinates at the points with xco2 values, are extracted from the satellite data (in .h5 format). These points are then interpolated using the Inverse Distance Weighting (IDW) method at a spatial resolution of 0.05 degrees. The output of this process is a binary file in .nc format.
